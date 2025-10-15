@@ -1,1 +1,149 @@
-/*  your css code here. If applicable */
+/* Basic Reset and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styling */
+.text-center {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.text-primary {
+    color: #007bff; /* Blue color for 'Book' in the title */
+    font-weight: 500;
+}
+
+/* Form Styling */
+.form-group > div {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Button Styling */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    margin-top: 15px; /* Separate button from the last input */
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    text-align: left;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* Striped Table Rows */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05); /* Light gray for odd rows */
+}
+
+/* Delete Button Styling */
+.delete {
+    cursor: pointer;
+    color: #fff;
+    background-color: #dc3545; /* Red background */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    line-height: 1; /* Center the 'X' better */
+    font-size: 0.9rem;
+    /* Use Font Awesome's trash icon for a more modern look, or 'X' */
+    /* If you want the 'X' like the image, change content to 'X' */
+}
+
+.delete:hover {
+    background-color: #c82333;
+}
+
+/* Style for the 'X' in the table, similar to the image */
+.delete-icon {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #dc3545; /* Red background */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 2px;
+}
